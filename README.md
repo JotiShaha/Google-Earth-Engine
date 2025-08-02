@@ -1,2 +1,2 @@
 # Google-Earth-Engine
-# Geospatial Analysis with Javascripts 
+Geospatial Analysis with Javascripts 
