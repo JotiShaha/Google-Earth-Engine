@@ -71,15 +71,15 @@ xr_precip = xr.open_dataset(
     **grid_params
 )
 
-# Apply your sorting and unit conversion
-xr_precip = xr_precip.sortby('time') * 730.5
+# sorting and unit conversion
+xr_precip = xr_precip.sortby('time') * 730.5 # 365.5/12*24 for yearly 
 
 print(xr_precip)
 
 # Calculate annual precipitation totals
-annual_precip = xr_precip.resample(time= 'YE').sum('time')
+annual_precip = xr_precip.resample(time= 'YE').sum('time') # YE = YEAR
 
-# Replace zero values with Nan
+# Replace zero values with NaN, NaN = No data
 annual_precip = xr.where(
     annual_precip == 0,
     np.nan,
@@ -100,7 +100,7 @@ plot = annual_precip.precipitation.plot.contourf(
                   'pad': 0.05}
 )
 
-  # Grab the list of years directly from your dataset
+  # Grab the list of years directly from the dataset
 years = annual_precip.time.dt.year.values
 
 # Loop through the maps and the years at the exact same time using zip()
