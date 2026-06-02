@@ -3,11 +3,15 @@ Geospatial Analysis with Python and Google Earth Engine API.
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-geospatial-3776AB?style=flat-square&logo=python&logoColor=white" alt="Geospatial Python" /> <img src="https://img.shields.io/badge/javascript-gis-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" /> <img src="https://img.shields.io/badge/earth_engine-api-967BB6?style=flat-square&logo=googleearth&logoColor=white" alt="Google Earth Engine" />
-</p>
 
 # Bangladesh Annual Precipitation Change Detection duirng 2000 to 2025 Using Animation
+<p align="center">
+  <img src="gee-python-codes/output-images/Preip_change_2000_2025.gif" width="350">
+</p>
 
-![Annual Precipitation Change](Preip_change_2000_2025.gif)
+<h4 align="center">Animated Precipitation Change (2000 - 2025) </h4>
+
+  
 ## Overview
 This project analyzes long-term precipitation variability across Bangladesh using GPM (Global Precipitation Measurement) Version 7 dataset ( <a href="https://developers.google.com/earth-engine/datasets/catalog/NASA_GPM_L3_IMERG_MONTHLY_V07#bands">GPM: Monthly Global Precipitation Measurement (GPM) vRelease 07</a> ) satellite precipitation data from 2000–2025. The dataset was processed in Google Earth Engine (GEE) to evaluate spatial patterns of precipitation change and identify regions experiencing increasing or decreasing precipitation trends.
 
