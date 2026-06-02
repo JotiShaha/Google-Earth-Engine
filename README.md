@@ -48,8 +48,6 @@ Annual precipitation varies considerably across the country, ranging from relati
 
 ## Visualization
 
-### Annual Precipitation Change Animation
-
 The animation displays year-to-year precipitation changes across Bangladesh from 2000–2025.
 
 ### Color Interpretation
